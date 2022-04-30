@@ -17,13 +17,15 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
+      "@enums/*": ["src/enums/*"],
       "@fixtures/*": ["src/fixtures/*"],
       "@hooks/*": ["src/hooks/*"],
       "@lib/*": ["src/lib/*"],
       "@pages/*": ["src/pages/*"],
       "@styles/*": ["src/styles/*"],
       "@public/*": ["public/*"],
-      "@images/*": ["public/images/*"]
+      "@images/*": ["public/images/*"],
+      "@i18n/*": ["i18n/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
