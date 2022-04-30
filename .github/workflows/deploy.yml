@@ -1,0 +1,40 @@
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get files
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+
+      - name: Install packages
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Export static files
+        run: npm run export
+
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: out
+          token: ${{ secrets.DeployToken }}
