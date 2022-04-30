@@ -1,0 +1,30 @@
+.navbar {
+  justify-content: space-between;
+  padding: 0 $layout-size_base;
+  height: $height_navbar;
+  background-color: $color_accent;
+
+  @extend %flex-row-center;
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__nav {
+    @extend %flex-row-center;
+  }
+
+  &__items {
+    @extend %flex-row-center;
+    @include layoutSpaceLeft($layout-size_big);
+
+    > li {
+      @include layoutSpaceLeft();
+
+      > a {
+        color: $color_text;
+      }
+    }
+  }
+}

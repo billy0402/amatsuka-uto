@@ -1,0 +1,142 @@
+@mixin hoverColorChange($color, $time: 300) {
+  transition: color #{$time}ms;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin hoverTabChange($bgColor, $tabColor: $color_line, $time: 300) {
+  position: relative;
+  transition: background-color #{$time}ms;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $tabColor;
+    content: '';
+    opacity: 0;
+    transition: opacity $time;
+  }
+
+  &:hover,
+  &.active {
+    background-color: $bgColor;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin hoverIconMoveToLeft($size: 3px, $time: 300) {
+  & > .icon {
+    transition: transform #{$time}ms;
+  }
+
+  &:hover > .icon {
+    transform: translateX(-$size);
+  }
+}
+
+@mixin hoverIconMoveToRight($size: 3px, $time: 300) {
+  & > .icon {
+    transition: transform #{$time}ms;
+  }
+
+  &:hover > .icon {
+    transform: translateX($size);
+  }
+}
+
+@mixin hoverIconRotate($deg: 180deg, $time: 300) {
+  & > .icon {
+    transition: transform #{$time}ms;
+  }
+
+  &:hover > .icon {
+    transform: rotate($deg);
+  }
+}
+
+@mixin activeIconRotate($deg: 180deg, $time: 300) {
+  & > .icon {
+    transition: transform #{$time}ms;
+  }
+
+  &.active > .icon {
+    transform: rotate($deg);
+  }
+}
+
+@mixin activeBackgroundColor($background, $time: 300) {
+  transition: background-color #{$time}ms;
+
+  &.active,
+  &.hover {
+    background-color: $background;
+  }
+}
+
+@mixin hoverBtn($color: $color_accent, $time: 300) {
+  color: $color;
+  transition: background-color #{$time}ms, color #{$time}ms;
+
+  &:hover {
+    background-color: $color;
+    color: $color_white;
+  }
+}
+
+@mixin hoverDarkBtn($background-color: $color_accent, $time: 300) {
+  color: $color_white;
+  background-color: $background-color;
+  transition: background-color #{$time}ms;
+
+  &:hover {
+    background-color: darken($color: $background-color, $amount: 10);
+  }
+}
+
+@mixin leftTabEffect(
+  $bgColor,
+  $tabColor: $color_line,
+  $textColor: $color_text-color,
+  $time: 300
+) {
+  position: relative;
+  transition: background-color #{$time}ms;
+  transition: color #{$time}ms;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $tabColor;
+    content: '';
+    opacity: 0;
+    transition: opacity $time;
+  }
+
+  &:hover,
+  &.active {
+    background-color: $bgColor;
+
+    &::before {
+      opacity: 1;
+    }
+
+    b {
+      color: $textColor;
+    }
+
+    svg {
+      fill: $textColor;
+    }
+  }
+}
