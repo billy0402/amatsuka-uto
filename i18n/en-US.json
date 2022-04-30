@@ -10,5 +10,15 @@
   },
   "GUILDLINE": {
     "TITLE": "Amatsuka Uto’s Fan Content Creation Guidelines"
+  },
+  "CONTACT": {
+    "CONFIRM": "Send",
+    "FORM": {
+      "COMPANY": "Company",
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "TITLE": "Title",
+      "CONTENT": "Please input your message"
+    }
   }
 }

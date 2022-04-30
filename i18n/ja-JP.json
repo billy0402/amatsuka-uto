@@ -1,4 +1,8 @@
 {
+  "FORM": {
+    "PLACEHOLDER_PREFIX": "請輸入",
+    "IS_REQUIRED": "為必填欄位"
+  },
   "ABOUT": {
     "HEIGHT": "身長 153 cm",
     "AGE": "年齢 16 歳",
@@ -10,5 +14,15 @@
   },
   "GUILDLINE": {
     "TITLE": "天使うと​ 二次創作ガイドライン"
+  },
+  "CONTACT": {
+    "CONFIRM": "送信する",
+    "FORM": {
+      "COMPANY": "会社名",
+      "NAME": "担当者様名",
+      "EMAIL": "メールアドレス",
+      "TITLE": "件名",
+      "CONTENT": "メッセージの内容を入力してください"
+    }
   }
 }

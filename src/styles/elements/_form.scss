@@ -1,0 +1,16 @@
+.form {
+  @extend %flex-column;
+
+  &__input {
+    @include layoutSpaceBottom();
+
+    input,
+    textarea {
+      padding: $row-size_col-margin-small;
+      width: 100%;
+      border: 1px solid $color_line;
+      border-radius: $border-radius_layout;
+      font-size: 0.75rem;
+    }
+  }
+}
