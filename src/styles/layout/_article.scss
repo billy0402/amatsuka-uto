@@ -1,0 +1,26 @@
+.article {
+  padding: 140px 280px;
+  line-height: 2rem;
+
+  &__title {
+    margin-bottom: $layout-size_base;
+    font-size: 1.5rem;
+  }
+
+  &__introduction {
+    margin-bottom: $layout-size_base;
+
+    @include layoutSpaceBottom();
+
+    p {
+      padding-left: 2em;
+      text-indent: -1em;
+
+      &:before {
+        position: relative;
+        left: -0.5em;
+        content: '★';
+      }
+    }
+  }
+}

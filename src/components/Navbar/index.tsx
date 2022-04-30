@@ -1,11 +1,16 @@
 import Link from 'next/link';
 
+import { LanguageSwitcher } from 'next-export-i18n';
+
 import Icon, { IconName } from '@components/Icon';
+import useI18n from '@hooks/useI18n';
 
 const Navbar = () => {
+  const { i18nRouter } = useI18n();
+
   return (
     <header className='navbar'>
-      <Link href='/'>
+      <Link href={i18nRouter('/')}>
         <a>
           <img className='navbar__logo' src='images/logo.png' alt='logo' />
         </a>
@@ -13,13 +18,24 @@ const Navbar = () => {
       <nav className='navbar__nav'>
         <ul className='navbar__items'>
           <li>
-            <Link href='/about'>About</Link>
+            <Link href={i18nRouter('/about')}>About</Link>
           </li>
           <li>
-            <Link href='/guildline'>Guildline</Link>
+            <Link href={i18nRouter('/guildline')}>Guildline</Link>
           </li>
           <li>
-            <Link href='/contact'>Contact</Link>
+            <Link href={i18nRouter('/contact')}>Contact</Link>
+          </li>
+        </ul>
+        <ul className='navbar__items'>
+          <li>
+            <LanguageSwitcher lang='ja-JP'>JP</LanguageSwitcher>
+          </li>
+          <li>
+            <LanguageSwitcher lang='en-US'>EN</LanguageSwitcher>
+          </li>
+          <li>
+            <LanguageSwitcher lang='zh-TW'>TW</LanguageSwitcher>
           </li>
         </ul>
         <ul className='navbar__items'>
