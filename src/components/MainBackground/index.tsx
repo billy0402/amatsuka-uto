@@ -2,27 +2,30 @@ import { useEffect, useState } from 'react';
 
 import { useRouter } from 'next/router';
 
-import { mainBackgroundMap } from '@fixtures/main-background';
-
-const defaultImage = mainBackgroundMap['/'];
+import { Background, mainBackgroundMap } from '@fixtures/main-background';
+import { imageRouter } from '@lib/image';
 
 const MainBackground = () => {
-  const [background, setBackground] = useState(defaultImage);
+  const [background, setBackground] = useState<Background | undefined>();
 
   const router = useRouter();
 
   useEffect(() => {
     const newBackground =
-      mainBackgroundMap[router.pathname as string] ?? defaultImage;
+      mainBackgroundMap[router.pathname as string] ?? undefined;
     setBackground(newBackground);
   }, [router.pathname]);
 
   return (
-    <img
-      className='main-background'
-      src={`images/${background.src}`}
-      alt={background.alt}
-    />
+    <>
+      {background && (
+        <img
+          className='main-background'
+          src={imageRouter(background.src)}
+          alt={background.alt}
+        />
+      )}
+    </>
   );
 };
 

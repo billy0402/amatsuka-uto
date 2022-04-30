@@ -1,4 +1,6 @@
-const mainBackgroundMap: { [key in string]: { src: string; alt: string } } = {
+type Background = { src: string; alt: string };
+
+const mainBackgroundMap: { [key in string]: Background } = {
   '/': {
     src: 'bg-close-eyes.jpg',
     alt: 'Amatsuka Uto',
@@ -9,4 +11,5 @@ const mainBackgroundMap: { [key in string]: { src: string; alt: string } } = {
   },
 };
 
+export type { Background };
 export { mainBackgroundMap };

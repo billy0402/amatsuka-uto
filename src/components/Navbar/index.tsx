@@ -4,6 +4,7 @@ import { LanguageSwitcher } from 'next-export-i18n';
 
 import Icon, { IconName } from '@components/Icon';
 import useI18n from '@hooks/useI18n';
+import { imageRouter } from '@lib/image';
 
 const Navbar = () => {
   const { i18nRouter } = useI18n();
@@ -12,7 +13,11 @@ const Navbar = () => {
     <header className='navbar'>
       <Link href={i18nRouter('/')}>
         <a>
-          <img className='navbar__logo' src='images/logo.png' alt='logo' />
+          <img
+            className='navbar__logo'
+            src={imageRouter('logo.png')}
+            alt='logo'
+          />
         </a>
       </Link>
       <nav className='navbar__nav'>

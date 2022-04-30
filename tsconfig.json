@@ -19,6 +19,7 @@
       "@components/*": ["src/components/*"],
       "@fixtures/*": ["src/fixtures/*"],
       "@hooks/*": ["src/hooks/*"],
+      "@lib/*": ["src/lib/*"],
       "@pages/*": ["src/pages/*"],
       "@styles/*": ["src/styles/*"],
       "@public/*": ["public/*"],

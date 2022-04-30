@@ -25,6 +25,8 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /amatsuka-uto
 
       - name: Export static files
         run: npm run export
