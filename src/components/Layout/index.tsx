@@ -1,3 +1,4 @@
+import MainBackground from '@components/MainBackground';
 import Navbar from '@components/Navbar';
 
 type Props = {
@@ -8,7 +9,8 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Navbar />
-      {children}
+      <MainBackground />
+      <main className='main'>{children}</main>
     </>
   );
 };

@@ -1,0 +1,12 @@
+.home {
+  height: 100%;
+
+  @extend %flex-column-center;
+
+  &__title {
+    margin: auto;
+    color: $color_text;
+    font-size: 10rem;
+    font-family: 'Mr De Haviland', cursive;
+  }
+}

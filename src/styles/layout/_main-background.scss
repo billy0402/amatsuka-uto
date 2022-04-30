@@ -1,0 +1,7 @@
+.main-background {
+  z-index: $z-index_background;
+  margin-top: $height_navbar;
+  opacity: 0.5;
+
+  @extend %pseudo-element--full;
+}

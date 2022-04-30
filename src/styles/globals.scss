@@ -1,6 +1,7 @@
 @use 'sass:math';
 
 @import 'base/reset';
+@import 'base/font';
 
 @import 'variable/color';
 @import 'variable/layout';
@@ -16,3 +17,7 @@
 @import 'elements/icon';
 
 @import 'layout/navbar';
+@import 'layout/main-background';
+@import 'layout/main';
+
+@import 'components/home';
