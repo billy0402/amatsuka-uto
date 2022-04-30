@@ -13,6 +13,10 @@ const mainBackgroundMap: { [key in string]: Background } = {
     src: 'bg-loli.jpg',
     alt: 'Amatsuka Uto',
   },
+  '/contact': {
+    src: 'bg-open-eyes.jpg',
+    alt: 'Amatsuka Uto',
+  },
 };
 
 export type { Background };
