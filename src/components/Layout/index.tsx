@@ -1,3 +1,4 @@
+import Footer from '@components/Footer';
 import MainBackground from '@components/MainBackground';
 import Navbar from '@components/Navbar';
 
@@ -11,6 +12,7 @@ const Layout = ({ children }: Props) => {
       <Navbar />
       <MainBackground />
       <main className='main'>{children}</main>
+      <Footer />
     </>
   );
 };
