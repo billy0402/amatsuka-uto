@@ -21,7 +21,7 @@ const MainBackground = () => {
       {background && (
         <img
           className='main-background'
-          src={imageRouter(background.src)}
+          src={imageRouter(`bg/${background.src}`)}
           alt={background.alt}
         />
       )}
