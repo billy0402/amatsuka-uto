@@ -1,5 +1,6 @@
 .navbar {
   position: fixed;
+  z-index: $z-index_basic;
   justify-content: space-between;
   padding: 0 $layout-size_base;
   width: 100%;
