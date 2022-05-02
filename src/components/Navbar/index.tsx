@@ -26,6 +26,9 @@ const Navbar = () => {
             <Link href={i18nRouter('/about')}>About</Link>
           </li>
           <li>
+            <Link href={i18nRouter('/goods')}>Goods</Link>
+          </li>
+          <li>
             <Link href={i18nRouter('/guildline')}>Guildline</Link>
           </li>
           <li>

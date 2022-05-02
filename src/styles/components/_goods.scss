@@ -1,0 +1,45 @@
+.goods {
+  &__item {
+    position: relative;
+    padding: $layout-size_base;
+
+    @extend %flex-row-center;
+    @include layoutSpaceBottom();
+
+    :after {
+      z-index: $z-index_background;
+      border-radius: $border-radius_layout;
+      background-color: $color_white;
+      opacity: 0.3;
+
+      @extend %pseudo-element--full;
+    }
+  }
+
+  &__cover {
+    width: 400px;
+  }
+
+  &__info {
+    flex: 1;
+
+    @include layoutSpaceLeft();
+
+    > * {
+      @include layoutSpaceBottom();
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    time {
+      display: block;
+    }
+  }
+
+  &__actions {
+    text-align: end;
+  }
+}

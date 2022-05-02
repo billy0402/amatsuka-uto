@@ -9,6 +9,10 @@ const mainBackgroundMap: { [key in string]: Background } = {
     src: 'bg-intro.jpg',
     alt: 'Amatsuka Uto',
   },
+  '/goods': {
+    src: 'bg-utopia.jpg',
+    alt: 'Amatsuka Uto',
+  },
   '/guildline': {
     src: 'bg-loli.jpg',
     alt: 'Amatsuka Uto',
