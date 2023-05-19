@@ -24,8 +24,8 @@ const GoodsPage: NextPage = () => {
                 {good.end && <span> ~ {good.end?.toLocaleDateString()}</span>}
               </time>
               <section className='goods__actions'>
-                <Link href={good.link}>
-                  <a className='btn'>More</a>
+                <Link className='btn' href={good.link}>
+                  More
                 </Link>
               </section>
             </article>

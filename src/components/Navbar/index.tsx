@@ -12,13 +12,11 @@ const Navbar = () => {
   return (
     <header className='navbar'>
       <Link href={i18nRouter('/')}>
-        <a>
-          <img
-            className='navbar__logo'
-            src={imageRouter('logo.png')}
-            alt='logo'
-          />
-        </a>
+        <img
+          className='navbar__logo'
+          src={imageRouter('logo.png')}
+          alt='logo'
+        />
       </Link>
       <nav className='navbar__nav'>
         <ul className='navbar__items'>
@@ -49,16 +47,12 @@ const Navbar = () => {
         <ul className='navbar__items'>
           <li>
             <Link href='https://twitter.com/amatsukauto'>
-              <a>
-                <Icon name={IconName.twitter} size='large' />
-              </a>
+              <Icon name={IconName.twitter} size='large' />
             </Link>
           </li>
           <li>
             <Link href='https://www.youtube.com/channel/UCdYR5Oyz8Q4g0ZmB4PkTD7g'>
-              <a>
-                <Icon name={IconName.youtube} size='large' />
-              </a>
+              <Icon name={IconName.youtube} size='large' />
             </Link>
           </li>
         </ul>
