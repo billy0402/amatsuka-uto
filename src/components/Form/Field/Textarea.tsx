@@ -22,8 +22,10 @@ const Textarea = ({
         cols={30}
         rows={10}
       />
-      {errors[name] && (
-        <span className='form__error-message'>{errors[name].message}</span>
+      {errors[name]?.message && (
+        <span className='form__error-message'>
+          {errors[name]?.message?.toString()}
+        </span>
       )}
     </section>
   );

@@ -16,7 +16,7 @@ $SS-media: 330px;
 
 // 1760px> Display
 @mixin XXLpc-width() {
-  @media all and(max-width: $XXXL-media) and (min-width: $XXL-media) {
+  @media all and (max-width: $XXXL-media) and (min-width: $XXL-media) {
     @content;
   }
 }
