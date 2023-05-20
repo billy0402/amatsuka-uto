@@ -1,71 +1,47 @@
 // RWD size
-$XXXL-media: 1960px;
-$XXL-media: 1760px;
-$XL-media: 1430px;
+$XL-media: 1760px;
 $L-media: 1240px;
-$M-media: 966px;
+$M-media: 920px;
 $S-media: 556px;
-$SS-media: 330px;
 
-// 1760px> Display
-@mixin XXXLpc-width() {
-  @media all and (min-width: $XXXL-media) {
-    @content;
-  }
-}
-
-// 1760px> Display
-@mixin XXLpc-width() {
-  @media all and (max-width: $XXXL-media) and (min-width: $XXL-media) {
-    @content;
-  }
-}
-
-// 1760px~1430px Display
+// 1760px > Display
 @mixin XLpc-width() {
-  @media all and (max-width: $XXL-media) and (min-width: $XL-media) {
+  @media all and (min-width: $XL-media) {
     @content;
   }
 }
 
-// 1240px~1430px Display
+// 1760px ~ 1240px Display
 @mixin Lpc-width() {
   @media all and (max-width: $XL-media) and (min-width: $L-media) {
     @content;
   }
 }
 
-// 1240px~966px Display */
+// 1240px ~ 860px Display
 @mixin pc-width() {
   @media all and (max-width: $L-media) and (min-width: $M-media) {
     @content;
   }
 }
 
-// 966px~556px Display
+// 860px ~ 556px Display
 @mixin pad-width() {
   @media all and (max-width: $M-media) and (min-width: $S-media) {
     @content;
   }
 }
 
-// 556px~0 Display
-@mixin phone-width() {
-  @media all and (max-width: $S-media) {
-    @content;
-  }
-}
-
-// 330px~0 Display
-@mixin s-phone-width() {
-  @media all and (max-width: $SS-media) {
-    @content;
-  }
-}
-
-// 966px~0 Display
+// 860px ~ 0 Display
 @mixin pad-under-width() {
   @media all and (max-width: $M-media) {
+    @content;
+  }
+}
+
+// 556px ~ 0 Display
+@mixin phone-width() {
+  @media all and (max-width: $S-media) {
     @content;
   }
 }

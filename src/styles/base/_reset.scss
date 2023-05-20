@@ -87,9 +87,9 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -130,12 +130,8 @@ q:after {
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
-}
-
-ul li {
-  list-style-type: none;
+  border-collapse: collapse;
 }
 
 *,
@@ -146,4 +142,5 @@ ul li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }

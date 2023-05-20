@@ -1,4 +1,4 @@
-@mixin layoutSpaceLeft($size: $layout-size_small) {
+@mixin layoutSpaceLeft($size: $margin_small) {
   margin-left: $size;
 
   &:nth-child(1) {
@@ -6,7 +6,7 @@
   }
 }
 
-@mixin layoutSpaceBottom($size: $layout-size_small) {
+@mixin layoutSpaceBottom($size: $layout-margin_small) {
   margin-top: $size;
 
   &:nth-child(1) {

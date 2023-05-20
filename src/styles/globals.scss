@@ -1,30 +1,43 @@
 @use 'sass:math';
 
+// 基本 (Base)
 @import 'base/reset';
 @import 'base/font';
 
+// 變數 (Variable)
 @import 'variable/color';
 @import 'variable/layout';
 
-@import 'mixin/RWD';
-@import 'mixin/flex-element';
-@import 'mixin/pseudo-element';
-@import 'mixin/layout-element';
-@import 'mixin/layout-grid';
+// 混合 (Mixin)
 @import 'mixin/layout-space';
+@import 'mixin/pseudo-element';
+@import 'mixin/RWD';
+@import 'mixin/shape';
 @import 'mixin/transition';
 
-@import 'elements/icon';
-@import 'elements/btn';
-@import 'elements/form';
+// 佔用區塊 (Placeholder)
+@import 'placeholder/effect-element';
+@import 'placeholder/flex-element';
+@import 'placeholder/form';
+@import 'placeholder/layout-element';
+@import 'placeholder/pseudo-element';
+@import 'placeholder/shape';
 
+// 結構 (Layout)
 @import 'layout/body';
-@import 'layout/navbar';
-@import 'layout/main-background';
-@import 'layout/main';
-@import 'layout/article';
-@import 'layout/footer';
 
-@import 'components/home';
-@import 'components/goods';
-@import 'components/contact';
+// 格線 (Grid)
+@import 'grid/row';
+@import 'grid/grid';
+
+// 表單 (Form)
+@import 'form/form';
+
+// 元素 (Elements)
+@import 'elements/link';
+
+// 組件 (Component)
+@import 'components/block-items';
+
+// 恥辱 (Shame)
+@import 'shame';
