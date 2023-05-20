@@ -13,28 +13,34 @@ const Input = ({
     required,
     disabled,
     defaultValue,
+    col,
   },
 }: InnerProps) => {
   const { t } = useTranslation();
 
   return (
-    <section className='form__input'>
-      {/* <label htmlFor={name}>{label}</label> */}
-      <input
-        {...register(name, {
-          required: required && `${label}${t('FORM.IS_REQUIRED')}`,
-        })}
-        id={name}
-        type={type}
-        placeholder={placeholder}
-        disabled={disabled}
-        defaultValue={defaultValue}
-      />
-      {errors[name]?.message && (
-        <span className='form__error-message'>
-          {errors[name]?.message?.toString()}
-        </span>
-      )}
+    <section className={`row__col row__col--${col}`}>
+      <label className='form__input' htmlFor={name}>
+        {/* <b>
+          {required && '* '}
+          {label}
+        </b> */}
+        <input
+          {...register(name, {
+            required: required && `${label}${t('FORM.IS_REQUIRED')}`,
+          })}
+          id={name}
+          type={type}
+          placeholder={placeholder}
+          disabled={disabled}
+          defaultValue={defaultValue}
+        />
+        {errors[name]?.message && (
+          <span className='form__error-message'>
+            {errors[name]?.message?.toString()}
+          </span>
+        )}
+      </label>
     </section>
   );
 };

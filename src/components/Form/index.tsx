@@ -10,6 +10,7 @@ export type FieldConfig = InputHTMLAttributes<
   name: string; // override InputHTMLAttributes
   type: string; // override InputHTMLAttributes
   label: string;
+  col?: number;
 };
 
 type Props = {
@@ -24,9 +25,11 @@ const Form = ({ fieldConfigs, onSubmit, children }: Props) => {
   return (
     <FormProvider {...methods}>
       <form className='form' onSubmit={methods.handleSubmit(onSubmit)}>
-        {fieldConfigs.map((fieldConfig) => (
-          <Field key={fieldConfig.name} fieldConfig={fieldConfig} />
-        ))}
+        <article className='row'>
+          {fieldConfigs.map((fieldConfig) => (
+            <Field key={fieldConfig.name} fieldConfig={fieldConfig} />
+          ))}
+        </article>
         {children}
       </form>
     </FormProvider>

@@ -6,12 +6,14 @@ export const contactFieldConfigs: FieldConfig[] = [
     type: 'text',
     label: 'CONTACT.FORM.COMPANY',
     required: true,
+    col: 6,
   },
   {
     name: 'name',
     type: 'text',
     label: 'CONTACT.FORM.NAME',
     required: true,
+    col: 6,
   },
   {
     name: 'email',

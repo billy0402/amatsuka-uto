@@ -1,7 +1,7 @@
 %input-block_base {
-  padding: $padding_small $margin_base;
+  padding: $padding_small/1.5 $padding_small;
   outline: none;
   border: $color_text solid 1px;
-  border-radius: $radius-size_over;
+  border-radius: $radius-size_base;
   letter-spacing: 2px;
 }

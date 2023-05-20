@@ -1,0 +1,28 @@
+.contact {
+  position: relative;
+  z-index: $z-index_base;
+  margin: auto;
+  padding: $padding_big;
+  max-width: 800px;
+
+  @extend %flex-column;
+  @include phone-width() {
+    padding: $padding_base;
+  }
+
+  &::after {
+    z-index: $z-index_back;
+    border: 1px solid $color_line;
+    border-radius: $border-radius_layout;
+    background-color: $color_primary;
+    opacity: 0.5;
+
+    @extend %full-pseudo-element;
+  }
+
+  &__actions {
+    justify-content: flex-end;
+
+    @extend %flex-row;
+  }
+}

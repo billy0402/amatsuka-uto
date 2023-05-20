@@ -24,21 +24,23 @@ const ContactPage: NextPage = () => {
     <article className='article contact'>
       <h1 className='article__title'>Contact Form</h1>
       <Form fieldConfigs={fieldConfigs} onSubmit={onSubmit}>
-        <section className='contact__actions'>
+        <section className='contact__actions margin-top'>
           <button className='btn' type='submit'>
             {t('CONTACT.CONFIRM')}
           </button>
         </section>
       </Form>
-      <section className='contact__warning'>
-        <p>
-          返信は天使うと本人が致します。
-          ご連絡を頂いてもすべてにご返信ができない場合がございます。
-          お急ぎの際は、返信の期限を記載の上、ご連絡をお願いいたします。
-          ３～５日返信がない場合はお手数ですが、もう一度ご連絡をお願いいたします。
-          お仕事以外のご連絡はお控えください。
-        </p>
-      </section>
+      <p className='margin-top'>
+        返信は天使うと本人が致します。
+        <br />
+        ご連絡を頂いてもすべてにご返信ができない場合がございます。
+        <br />
+        お急ぎの際は、返信の期限を記載の上、ご連絡をお願いいたします。
+        <br />
+        ３～５日返信がない場合はお手数ですが、もう一度ご連絡をお願いいたします。
+        <br />
+        お仕事以外のご連絡はお控えください。
+      </p>
     </article>
   );
 };

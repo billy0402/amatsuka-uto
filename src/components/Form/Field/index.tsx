@@ -18,17 +18,11 @@ const Field = ({ fieldConfig }: Props) => {
   const methods = useFormContext();
   const { t } = useTranslation();
 
-  const getFieldName = (
-    fieldConfig: FieldConfig,
-    options: { prefix: string } = { prefix: '' },
-  ): string => options.prefix + (t(fieldConfig.label) || fieldConfig.label);
-
   const updatedFieldConfig = {
     ...fieldConfig,
-    label: getFieldName(fieldConfig, {
-      prefix: fieldConfig.required ? '* ' : '',
-    }),
-    placeholder: getFieldName(fieldConfig),
+    label: t(fieldConfig.label),
+    placeholder: fieldConfig.placeholder ?? t(fieldConfig.label),
+    col: fieldConfig.col ?? 12,
   };
 
   switch (fieldConfig.type) {

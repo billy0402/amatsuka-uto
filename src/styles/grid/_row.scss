@@ -15,6 +15,7 @@ $row-size_col-min: 240px;
     flex-direction: column;
     box-sizing: border-box;
     padding: $row-size_col-margin-small;
+    max-width: 100%;
 
     &--between {
       flex-direction: row;
