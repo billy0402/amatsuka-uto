@@ -52,12 +52,15 @@ const Navbar = () => {
             <LanguageSwitcher lang='zh-TW'>TW</LanguageSwitcher>
           </li>
           <li className='margin-left'>
-            <Link href='https://twitter.com/amatsukauto'>
+            <Link target='_blank' href='https://twitter.com/amatsukauto'>
               <span className='icomoon-twitter' />
             </Link>
           </li>
           <li>
-            <Link href='https://www.youtube.com/channel/UCdYR5Oyz8Q4g0ZmB4PkTD7g'>
+            <Link
+              target='_blank'
+              href='https://www.youtube.com/channel/UCdYR5Oyz8Q4g0ZmB4PkTD7g'
+            >
               <span className='icomoon-youtube' />
             </Link>
           </li>
