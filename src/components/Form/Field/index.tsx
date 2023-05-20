@@ -9,7 +9,8 @@ import Textarea from './Textarea';
 type Props = {
   fieldConfig: FieldConfig;
 };
-type InnerProps = UseFormReturn & {
+
+export type InnerProps = UseFormReturn & {
   fieldConfig: FieldConfig;
 };
 
@@ -39,4 +40,3 @@ const Field = ({ fieldConfig }: Props) => {
 };
 
 export default Field;
-export type { InnerProps };

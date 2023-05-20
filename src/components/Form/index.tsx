@@ -4,7 +4,9 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 import Field from './Field';
 
-type FieldConfig = InputHTMLAttributes<HTMLInputElement | HTMLSelectElement> & {
+export type FieldConfig = InputHTMLAttributes<
+  HTMLInputElement | HTMLSelectElement
+> & {
   name: string; // override InputHTMLAttributes
   type: string; // override InputHTMLAttributes
   label: string;
@@ -32,4 +34,3 @@ const Form = ({ fieldConfigs, onSubmit, children }: Props) => {
 };
 
 export default Form;
-export type { FieldConfig };

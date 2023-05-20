@@ -1,4 +1,4 @@
-const goods = [
+export const goods = [
   {
     image: 'Utopia.jpg',
     title: '天使うと 1st Album「UTOPIA」',
@@ -25,5 +25,3 @@ const goods = [
     start: new Date(2021, 6, 31),
   },
 ];
-
-export { goods };

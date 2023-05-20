@@ -1,7 +1,7 @@
 import TwitterIcon from './src/TwitterIcon';
 import YoutubeIcon from './src/YoutubeIcon';
 
-enum IconName {
+export enum IconName {
   twitter = 'twitter',
   youtube = 'youtube',
 }
@@ -39,4 +39,3 @@ const Icon = ({ name, color, size }: Props) => {
 };
 
 export default Icon;
-export { IconName };

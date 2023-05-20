@@ -1,6 +1,6 @@
 import { FieldConfig } from '@components/Form';
 
-const contactFieldConfigs: FieldConfig[] = [
+export const contactFieldConfigs: FieldConfig[] = [
   {
     name: 'company',
     type: 'text',
@@ -32,5 +32,3 @@ const contactFieldConfigs: FieldConfig[] = [
     required: true,
   },
 ];
-
-export { contactFieldConfigs };
