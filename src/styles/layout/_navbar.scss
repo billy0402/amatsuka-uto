@@ -3,30 +3,97 @@
   top: 0;
   left: 0;
   z-index: $z-index_front;
+  overflow: auto;
   width: 100%;
   background-color: $color_accent;
   box-shadow: $box-shadow_element;
   opacity: 0.9;
 
   &__container {
+    position: relative;
     justify-content: space-between;
     height: $height_navbar;
+    transition: height 300ms;
 
     @extend %layout-container;
     @extend %flex-row-center;
+    @include pad-under-width() {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &.active {
+      height: 100vh;
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+
+    @extend %flex-center;
+    @include square(40px);
+    @include pad-under-width {
+      display: flex;
+    }
+
+    > span {
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: $color_text;
+      transition: transform 300ms, margin-top 300ms;
+
+      &:nth-child(1) {
+        margin-top: -20px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 20px;
+      }
+    }
+
+    &.active {
+      + .navbar__items {
+        height: unset;
+      }
+
+      > span {
+        margin-top: unset !important;
+
+        &:nth-child(1) {
+          transform: rotate(-45deg);
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          transform: rotate(45deg);
+        }
+      }
+    }
   }
 
   &__logo {
     margin-top: 5px;
-    width: 100px;
-    height: 100px;
+    height: $height_navbar;
+
+    aspect-ratio: 1;
   }
 
   &__items {
     @extend %flex-row-center;
+    @include pad-under-width() {
+      flex-direction: column;
+    }
 
     > li {
       @include layoutSpaceLeft();
+      @include pad-under-width() {
+        margin-top: $margin_base;
+        margin-left: unset !important;
+      }
 
       > a {
         @include icomoon() {

@@ -4,21 +4,32 @@ import { LanguageSwitcher } from 'next-export-i18n';
 
 import useI18n from '@hooks/useI18n';
 import { imageRouter } from '@lib/image';
+import { useState } from 'react';
 
 const Navbar = () => {
   const { i18nRouter } = useI18n();
 
+  const [active, setActive] = useState(false);
+
   return (
     <header className='navbar'>
-      <nav className='navbar__container'>
-        <Link href={i18nRouter('/')}>
+      <nav className={`navbar__container${active ? ' active' : ''}`}>
+        <a
+          onClick={() => setActive(!active)}
+          className={`navbar__burger${active ? ' active' : ''}`}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <Link href={i18nRouter('/')} onClick={() => setActive(false)}>
           <img
             className='navbar__logo'
             src={imageRouter('logo.png')}
             alt='logo'
           />
         </Link>
-        <ul className='navbar__items'>
+        <ul className='navbar__items' onClick={() => setActive(false)}>
           <li>
             <Link href={i18nRouter('/about')}>About</Link>
           </li>
