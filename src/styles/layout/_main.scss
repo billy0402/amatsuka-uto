@@ -10,7 +10,7 @@ $background-types: ('close-eyes', 'intro', 'utopia', 'loli', 'open-eyes');
   &::after {
     position: fixed;
     z-index: $z-index_back;
-    background-image: url(/images/bg/bg-close-eyes.jpg);
+    background-image: url('../../../public/images/bg/bg-close-eyes.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ $background-types: ('close-eyes', 'intro', 'utopia', 'loli', 'open-eyes');
   @each $name in $background-types {
     &--bg-#{$name} {
       &::after {
-        background-image: url(/images/bg/bg-#{$name}.jpg);
+        background-image: url('../../../public/images/bg/bg-#{$name}.jpg');
       }
     }
   }
