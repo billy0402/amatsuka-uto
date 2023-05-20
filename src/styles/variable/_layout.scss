@@ -26,3 +26,5 @@ $block-padding_big: $padding_base $padding_big;
 
 $height_navbar: 120px;
 $height_footer: 100px;
+
+$min-height_main: calc(100vh - $height_navbar - $height_footer);

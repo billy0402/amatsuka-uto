@@ -3,7 +3,7 @@ $background-types: ('close-eyes', 'intro', 'utopia', 'loli', 'open-eyes');
 .main {
   margin-top: $height_navbar;
   padding: $margin_big 0;
-  min-height: calc(100vh - $height_footer);
+  min-height: $min-height_main;
 
   @extend %layout-container;
 
