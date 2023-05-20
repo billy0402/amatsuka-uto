@@ -55,7 +55,7 @@
     font-weight: 500;
 
     @extend %flex-column-center-center;
-    @include hoverBackgroundTransition($color_accent, $color_accent-light);
+    @include hoverBackgroundTransition($color_accent, $color_accent--dark);
 
     > span {
       margin-bottom: $padding_small;

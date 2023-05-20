@@ -1,5 +1,4 @@
 #__next {
-  overflow: hidden;
   min-height: 100vh;
   max-width: 100vw;
 }
@@ -23,14 +22,15 @@ $title-font-size: (
 
 @each $name, $size in $title-font-size {
   h#{$name} {
+    color: $color_accent;
     font-weight: 500;
     font-size: $size;
-    @if $name == '1' {
-      color: $color_accent;
-    } @else {
-      color: #d98956;
-    }
   }
+}
+
+a {
+  color: $color_text;
+  cursor: pointer;
 }
 
 .text-white {

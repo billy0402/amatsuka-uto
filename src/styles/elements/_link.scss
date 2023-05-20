@@ -2,5 +2,5 @@
   text-decoration: none;
   cursor: pointer;
 
-  @include hoverColorTransition($color_accent-light, $color_text);
+  @include hoverColorTransition($color_accent--dark, $color_text);
 }

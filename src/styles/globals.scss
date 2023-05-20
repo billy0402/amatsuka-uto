@@ -24,9 +24,6 @@
 @import 'placeholder/pseudo-element';
 @import 'placeholder/shape';
 
-// 結構 (Layout)
-@import 'layout/body';
-
 // 格線 (Grid)
 @import 'grid/row';
 @import 'grid/grid';
@@ -36,6 +33,9 @@
 
 // 元素 (Elements)
 @import 'elements/link';
+
+// 結構 (Layout)
+@import 'layout/body';
 
 // 組件 (Component)
 @import 'components/block-items';
