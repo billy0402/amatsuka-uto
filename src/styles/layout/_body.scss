@@ -23,7 +23,7 @@ $title-font-size: (
 @each $name, $size in $title-font-size {
   h#{$name} {
     color: $color_accent;
-    font-weight: 500;
+    font-weight: 700;
     font-size: $size;
   }
 }

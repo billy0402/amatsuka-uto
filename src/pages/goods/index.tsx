@@ -3,13 +3,16 @@ import Link from 'next/link';
 
 import { goods } from '@fixtures/goods';
 import { imageRouter } from '@lib/image';
+import { useSelectedLanguage } from 'next-export-i18n';
 
 const GoodsPage: NextPage = () => {
+  const { lang } = useSelectedLanguage();
+
   return (
     <article className='article'>
-      <ul className='goods__items'>
+      <ul className='goods'>
         {goods.map((good) => (
-          <li key={good.title} className='goods__item'>
+          <li key={good.title}>
             <img
               className='goods__cover'
               src={imageRouter(`goods/${good.image}`)}
@@ -20,11 +23,13 @@ const GoodsPage: NextPage = () => {
               <p className='pre-line'>{good.description}</p>
               <time>
                 販売期間：
-                {good.start.toLocaleDateString()}
-                {good.end && <span> ~ {good.end?.toLocaleDateString()}</span>}
+                {good.start.toLocaleDateString(lang)}
+                {good.end && (
+                  <span> ~ {good.end.toLocaleDateString(lang)}</span>
+                )}
               </time>
               <section className='goods__actions'>
-                <Link className='btn' href={good.link}>
+                <Link className='btn' target='_blank' href={good.link}>
                   More
                 </Link>
               </section>

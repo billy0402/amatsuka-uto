@@ -1,0 +1,52 @@
+.goods {
+  > li {
+    position: relative;
+    z-index: $z-index_base;
+    flex-wrap: wrap;
+    padding: $padding_base;
+
+    @extend %flex-row-center;
+    @include layoutSpaceBottom();
+
+    &::after {
+      z-index: $z-index_back;
+      border-radius: $border-radius_layout;
+      background-color: $color_white;
+      opacity: 0.75;
+
+      @extend %full-pseudo-element;
+    }
+  }
+
+  &__cover {
+    margin-right: $margin_small;
+    width: 400px;
+
+    @include pad-under-width() {
+      margin-right: unset;
+      margin-bottom: $margin_small;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    flex: 1;
+
+    > * {
+      @include layoutSpaceBottom();
+    }
+
+    h2 {
+      color: $color_accent--dark;
+      font-size: 1.5rem;
+    }
+
+    time {
+      display: inline-block;
+    }
+  }
+
+  &__actions {
+    text-align: end;
+  }
+}
