@@ -6,7 +6,7 @@
   }
 }
 
-@mixin layoutSpaceBottom($size: $layout-margin_small) {
+@mixin layoutSpaceBottom($size: $margin_small) {
   margin-top: $size;
 
   &:nth-child(1) {

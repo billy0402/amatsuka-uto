@@ -1,0 +1,22 @@
+.article {
+  &__title {
+    margin-bottom: $margin_base;
+    color: $color_text;
+    font-size: 1.5rem;
+  }
+
+  &__introduction {
+    margin-bottom: $margin_base;
+
+    p {
+      padding-left: 2em;
+      text-indent: -1em;
+
+      &:before {
+        position: relative;
+        left: -0.5em;
+        content: '★';
+      }
+    }
+  }
+}
