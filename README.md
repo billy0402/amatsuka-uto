@@ -4,10 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## environment
 
-- [macOS 10.15.7](https://www.apple.com/tw/macos/catalina/)
-- [Visual Studio Code 1.63.2](https://code.visualstudio.com/)
-- [nvm 0.39.1, node 16.13.2, npm 8.1.2](https://nodejs.org/en/)
-- [Next 12.1.5](https://nextjs.org/)
+- [macOS 12.6.5](https://www.apple.com/tw/macos/monterey/)
+- [Visual Studio Code 1.77.0](https://code.visualstudio.com/)
+- [nvm 0.39.1, node 16.16.0, npm 8.11.0](https://nodejs.org/en/)
+- [Next.js 13.4.3](https://nextjs.org/)
+- [React.js 18.2.0](https://zh-hant.reactjs.org/)
 
 ## Getting Started
 
