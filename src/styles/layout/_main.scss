@@ -26,4 +26,12 @@ $background-types: ('close-eyes', 'intro', 'utopia', 'loli', 'open-eyes');
       }
     }
   }
+
+  &--bg-intro {
+    &::after {
+      @include phone-width() {
+        top: $height_navbar;
+      }
+    }
+  }
 }

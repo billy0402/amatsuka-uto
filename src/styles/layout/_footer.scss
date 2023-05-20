@@ -2,6 +2,10 @@
   background-color: $color_primary;
   opacity: 0.9;
 
+  @include phone-width() {
+    font-size: 0.75rem;
+  }
+
   &__container {
     height: $height_footer;
 
