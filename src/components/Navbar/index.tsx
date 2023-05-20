@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import { LanguageSwitcher } from 'next-export-i18n';
 
-import Icon, { IconName } from '@components/Icon';
 import useI18n from '@hooks/useI18n';
 import { imageRouter } from '@lib/image';
 
@@ -47,12 +46,12 @@ const Navbar = () => {
         <ul className='navbar__items'>
           <li>
             <Link href='https://twitter.com/amatsukauto'>
-              <Icon name={IconName.twitter} size='large' />
+              <span className='icomoon-twitter' />
             </Link>
           </li>
           <li>
             <Link href='https://www.youtube.com/channel/UCdYR5Oyz8Q4g0ZmB4PkTD7g'>
-              <Icon name={IconName.youtube} size='large' />
+              <span className='icomoon-youtube' />
             </Link>
           </li>
         </ul>
