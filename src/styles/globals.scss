@@ -15,6 +15,7 @@
 @import 'mixin/RWD';
 @import 'mixin/shape';
 @import 'mixin/transition';
+@import 'mixin/icon';
 
 // 佔用區塊 (Placeholder)
 @import 'placeholder/effect-element';
@@ -36,6 +37,9 @@
 
 // 結構 (Layout)
 @import 'layout/body';
+@import 'layout/navbar';
+@import 'layout/main';
+@import 'layout/footer';
 
 // 組件 (Component)
 @import 'components/block-items';

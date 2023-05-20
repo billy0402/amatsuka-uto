@@ -10,14 +10,14 @@ const Navbar = () => {
 
   return (
     <header className='navbar'>
-      <Link href={i18nRouter('/')}>
-        <img
-          className='navbar__logo'
-          src={imageRouter('logo.png')}
-          alt='logo'
-        />
-      </Link>
-      <nav className='navbar__nav'>
+      <nav className='navbar__container'>
+        <Link href={i18nRouter('/')}>
+          <img
+            className='navbar__logo'
+            src={imageRouter('logo.png')}
+            alt='logo'
+          />
+        </Link>
         <ul className='navbar__items'>
           <li>
             <Link href={i18nRouter('/about')}>About</Link>
@@ -31,9 +31,7 @@ const Navbar = () => {
           <li>
             <Link href={i18nRouter('/contact')}>Contact</Link>
           </li>
-        </ul>
-        <ul className='navbar__items'>
-          <li>
+          <li className='margin-left'>
             <LanguageSwitcher lang='ja-JP'>JP</LanguageSwitcher>
           </li>
           <li>
@@ -42,9 +40,7 @@ const Navbar = () => {
           <li>
             <LanguageSwitcher lang='zh-TW'>TW</LanguageSwitcher>
           </li>
-        </ul>
-        <ul className='navbar__items'>
-          <li>
+          <li className='margin-left'>
             <Link href='https://twitter.com/amatsukauto'>
               <span className='icomoon-twitter' />
             </Link>

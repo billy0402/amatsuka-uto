@@ -53,6 +53,14 @@ a {
   margin-bottom: $margin_base;
 }
 
+.margin-left {
+  margin-left: $margin_base !important;
+}
+
+.margin-right {
+  margin-right: $margin_base;
+}
+
 .margin-center {
   margin-right: auto;
   margin-left: auto;

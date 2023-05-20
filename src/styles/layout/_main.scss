@@ -1,0 +1,8 @@
+.main {
+  min-height: calc(100vh - $height_footer);
+  background-image: url(/images/bg/bg-close-eyes.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  opacity: 0.5;
+}

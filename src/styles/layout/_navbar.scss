@@ -1,0 +1,37 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index_front;
+  width: 100%;
+  background-color: $color_accent;
+  box-shadow: $box-shadow_element;
+  opacity: 0.9;
+
+  &__container {
+    justify-content: space-between;
+
+    @extend %layout-container;
+    @extend %flex-row-center;
+  }
+
+  &__logo {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__items {
+    @extend %flex-row-center;
+
+    > li {
+      @include layoutSpaceLeft();
+
+      > a {
+        @include icomoon() {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
