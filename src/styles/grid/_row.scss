@@ -37,7 +37,7 @@ $row-size_col-min: 240px;
       align-items: flex-start;
       flex: 0 0 calc(#{100% * ($itemNumber/12)});
 
-      @include phone-width() {
+      @include pad-under-width() {
         flex: 1 $row-size_col-min;
       }
     }
