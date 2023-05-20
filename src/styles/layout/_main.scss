@@ -1,16 +1,18 @@
 $background-types: ('close-eyes', 'intro', 'utopia', 'loli', 'open-eyes');
 
 .main {
+  margin-top: $height_navbar;
   min-height: calc(100vh - $height_footer);
 
   @extend %layout-container;
 
   &::after {
+    position: fixed;
     z-index: $z-index_back;
     background-image: url(/images/bg/bg-close-eyes.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     opacity: 0.5;
 
     @extend %full-pseudo-element;

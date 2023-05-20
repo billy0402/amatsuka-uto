@@ -10,6 +10,7 @@
 
   &__container {
     justify-content: space-between;
+    height: $height_navbar;
 
     @extend %layout-container;
     @extend %flex-row-center;

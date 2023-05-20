@@ -1,0 +1,12 @@
+.home {
+  min-height: calc(100vh - $height_footer);
+
+  @extend %flex-center;
+
+  &__title {
+    color: $color_text;
+    text-align: center;
+    font-size: 10rem;
+    font-family: 'Mr De Haviland', cursive;
+  }
+}
