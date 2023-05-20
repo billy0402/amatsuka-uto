@@ -39,18 +39,18 @@ const Navbar = () => {
           <li>
             <Link href={i18nRouter('/guildline')}>Guildline</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href={i18nRouter('/contact')}>Contact</Link>
-          </li>
+          </li> */}
           <li className='margin-left'>
             <LanguageSwitcher lang='ja-JP'>JP</LanguageSwitcher>
           </li>
           <li>
             <LanguageSwitcher lang='en-US'>EN</LanguageSwitcher>
           </li>
-          <li>
+          {/* <li>
             <LanguageSwitcher lang='zh-TW'>TW</LanguageSwitcher>
-          </li>
+          </li> */}
           <li className='margin-left'>
             <Link target='_blank' href='https://twitter.com/amatsukauto'>
               <span className='icomoon-twitter' />
