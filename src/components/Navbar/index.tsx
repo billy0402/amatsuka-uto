@@ -39,11 +39,13 @@ const Navbar = () => {
               <Link href={i18nRouter(href)}>{label}</Link>
             </li>
           ))}
+          <hr />
           {languages.map(({ label, locale }) => (
             <li key={locale}>
               <LanguageSwitcher lang={locale}>{label}</LanguageSwitcher>
             </li>
           ))}
+          <hr />
           {socialLinks.map(({ icon, href }) => (
             <li key={href}>
               <Link
