@@ -24,5 +24,9 @@
     justify-content: flex-end;
 
     @extend %flex-row;
+
+    > button {
+      cursor: pointer;
+    }
   }
 }

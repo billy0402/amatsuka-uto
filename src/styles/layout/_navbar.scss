@@ -101,6 +101,13 @@
         }
       }
 
+      > a,
+      > span {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       > span {
         cursor: pointer;
       }
