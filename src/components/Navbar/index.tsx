@@ -1,10 +1,14 @@
+import { useState } from 'react';
+
 import Link from 'next/link';
 
 import { LanguageSwitcher } from 'next-export-i18n';
 
+import { languages } from '@fixtures/languages';
+import { routers } from '@fixtures/routers';
+import { socialLinks } from '@fixtures/social-links';
 import useI18n from '@hooks/useI18n';
 import { imageRouter } from '@lib/image';
-import { useState } from 'react';
 
 const Navbar = () => {
   const { i18nRouter } = useI18n();
@@ -30,40 +34,27 @@ const Navbar = () => {
           />
         </Link>
         <ul className='navbar__items' onClick={() => setActive(false)}>
-          <li>
-            <Link href={i18nRouter('/about')}>About</Link>
-          </li>
-          <li>
-            <Link href={i18nRouter('/goods')}>Goods</Link>
-          </li>
-          <li>
-            <Link href={i18nRouter('/guildline')}>Guildline</Link>
-          </li>
-          {/* <li>
-            <Link href={i18nRouter('/contact')}>Contact</Link>
-          </li> */}
-          <li className='margin-left'>
-            <LanguageSwitcher lang='ja-JP'>JP</LanguageSwitcher>
-          </li>
-          <li>
-            <LanguageSwitcher lang='en-US'>EN</LanguageSwitcher>
-          </li>
-          {/* <li>
-            <LanguageSwitcher lang='zh-TW'>TW</LanguageSwitcher>
-          </li> */}
-          <li className='margin-left'>
-            <Link target='_blank' href='https://twitter.com/amatsukauto'>
-              <span className='icomoon-twitter' />
-            </Link>
-          </li>
-          <li>
-            <Link
-              target='_blank'
-              href='https://www.youtube.com/channel/UCdYR5Oyz8Q4g0ZmB4PkTD7g'
-            >
-              <span className='icomoon-youtube' />
-            </Link>
-          </li>
+          {routers.map(({ label, href }) => (
+            <li key={href}>
+              <Link href={i18nRouter(href)}>{label}</Link>
+            </li>
+          ))}
+          {languages.map(({ label, locale }) => (
+            <li key={locale}>
+              <LanguageSwitcher lang={locale}>{label}</LanguageSwitcher>
+            </li>
+          ))}
+          {socialLinks.map(({ icon, href }) => (
+            <li key={href}>
+              <Link
+                target='_blank'
+                href={href}
+                style={{ textDecoration: 'none' }}
+              >
+                <span className={`icomoon-${icon}`} />
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
