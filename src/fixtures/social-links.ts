@@ -12,4 +12,8 @@ export const socialLinks: SocialLink[] = [
     icon: 'youtube',
     href: 'https://www.youtube.com/channel/UCdYR5Oyz8Q4g0ZmB4PkTD7g',
   },
+  {
+    icon: 'twitch',
+    href: 'https://www.twitch.tv/utonyan',
+  },
 ];

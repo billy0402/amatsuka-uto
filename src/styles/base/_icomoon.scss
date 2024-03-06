@@ -2,12 +2,12 @@
   font-weight: normal;
   font-style: normal;
   font-family: 'icomoon';
-  src: url('../../../public/fonts/icomoon.eot?yjcds');
-  src: url('../../../public/fonts/icomoon.eot?yjcds#iefix')
+  src: url('../../../public/fonts/icomoon.eot?v9eugh');
+  src: url('../../../public/fonts/icomoon.eot?v9eugh#iefix')
       format('embedded-opentype'),
-    url('../../../public/fonts/icomoon.ttf?yjcds') format('truetype'),
-    url('../../../public/fonts/icomoon.woff?yjcds') format('woff'),
-    url('../../../public/fonts/icomoon.svg?yjcds#icomoon') format('svg');
+    url('../../../public/fonts/icomoon.ttf?v9eugh') format('truetype'),
+    url('../../../public/fonts/icomoon.woff?v9eugh') format('woff'),
+    url('../../../public/fonts/icomoon.svg?v9eugh#icomoon') format('svg');
 
   font-display: block;
 }
@@ -33,4 +33,7 @@
 }
 .icomoon-youtube:before {
   content: '\e901';
+}
+.icomoon-twitch:before {
+  content: '\ea9f';
 }
