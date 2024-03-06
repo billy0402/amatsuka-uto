@@ -20,8 +20,11 @@
 
   &__cover {
     margin-right: $margin_small;
+    max-height: 225px;
     width: 400px;
+    background-color: lighten($color_accent, 10);
 
+    object-fit: contain;
     @include pad-under-width() {
       margin-right: unset;
       margin-bottom: $margin_small;
