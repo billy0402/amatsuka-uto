@@ -1,5 +1,27 @@
 export const goods = [
   {
+    image: 'tokimeki.jpg',
+    title: '『#トキメキ製作所「こはく」カンパニー！』から 番組グッズが発売📡',
+    description: '#秋雪こはく さんと #天使うと さん',
+    link: 'https://slist.amiami.jp/top/search/list?s_keywords=トキメキ製作所 サイバー%26パンク',
+    start: new Date(2024, 4, 22),
+  },
+  {
+    image: 'kuji-vtuber.jpg',
+    title: 'くじスクエア VTuberくじ',
+    description: '大人気VTuberがくじになって登場！',
+    link: 'https://kuji-square.com/vtuber-kuji.html',
+    start: new Date(2023, 6, 22),
+  },
+  {
+    image: '2022-birthday.jpg',
+    title: '天使うと お誕生日記念グッズ',
+    description: 'VTuber天使うとのお誕生日記念商品です。',
+    link: 'https://amatsukauto.booth.pm/items/4239260',
+    start: new Date(2022, 9, 14),
+    end: new Date(2022, 9, 30),
+  },
+  {
     image: 'Utopia.jpg',
     title: '天使うと 1st Album「UTOPIA」',
     description:
