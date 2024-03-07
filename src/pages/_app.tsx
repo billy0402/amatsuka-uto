@@ -1,9 +1,9 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import Layout from '@components/Layout';
-import { basePath } from '@lib/env';
-import '@styles/globals.scss';
+import Layout from '@/components/Layout';
+import { basePath } from '@/lib/env';
+import '@/styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

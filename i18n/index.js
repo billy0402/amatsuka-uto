@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const enUSI18n = require('./en-US.json');
 const jaJP18n = require('./ja-JP.json');
 const zhTWI18n = require('./zh-TW.json');

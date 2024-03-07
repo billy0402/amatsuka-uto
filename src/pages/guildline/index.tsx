@@ -4,9 +4,9 @@ import type { NextPage } from 'next';
 
 import { useSelectedLanguage, useTranslation } from 'next-export-i18n';
 
-import { Language } from '@enums/language';
-import guildlineEN from '@i18n/guildline/en-US';
-import guildlineJP from '@i18n/guildline/ja-JP';
+import { Language } from '@/enums/language';
+import guildlineEN from '@/i18n/guildline/en-US';
+import guildlineJP from '@/i18n/guildline/ja-JP';
 
 const GuildlinePage: NextPage = () => {
   const { t } = useTranslation();

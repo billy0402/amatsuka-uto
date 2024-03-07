@@ -4,11 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## environment
 
-- [macOS 12.6.5](https://www.apple.com/tw/macos/monterey/)
-- [Visual Studio Code 1.77.0](https://code.visualstudio.com/)
-- [nvm 0.39.1, node 16.16.0, npm 8.11.0](https://nodejs.org/en/)
-- [Next.js 13.4.3](https://nextjs.org/)
-- [React.js 18.2.0](https://zh-hant.reactjs.org/)
+- [macOS 12.7.2](https://www.apple.com/tw/macos/monterey/)
+- [Visual Studio Code 1.85.1](https://code.visualstudio.com/)
+- [nvm 0.39.7, node 20.10.0, npm 10.2.3](https://nodejs.org/en/)
+- [Next.js 14.1.3](https://nextjs.org/)
+- [React.js 18.2.0](https://react.dev/)
 
 ## Getting Started
 
@@ -18,15 +18,17 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 

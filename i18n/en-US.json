@@ -1,4 +1,8 @@
 {
+  "FORM": {
+    "PLACEHOLDER_PREFIX": "Please input",
+    "IS_REQUIRED": "is required"
+  },
   "ABOUT": {
     "HEIGHT": "Height 153 cm",
     "AGE": "Age 16 years old",

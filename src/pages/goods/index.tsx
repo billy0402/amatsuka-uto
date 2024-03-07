@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 
-import { goods } from '@fixtures/goods';
-import { imageRouter } from '@lib/image';
+import { goods } from '@/fixtures/goods';
+import { imageRouter } from '@/lib/image';
 import { useSelectedLanguage } from 'next-export-i18n';
 
 const GoodsPage: NextPage = () => {

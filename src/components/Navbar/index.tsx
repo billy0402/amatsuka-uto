@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 import { LanguageSwitcher } from 'next-export-i18n';
 
-import { languages } from '@fixtures/languages';
-import { routers } from '@fixtures/routers';
-import { socialLinks } from '@fixtures/social-links';
-import useI18n from '@hooks/useI18n';
-import { imageRouter } from '@lib/image';
+import { languages } from '@/fixtures/languages';
+import { routers } from '@/fixtures/routers';
+import { socialLinks } from '@/fixtures/social-links';
+import useI18n from '@/hooks/useI18n';
+import { imageRouter } from '@/lib/image';
 
 const Navbar = () => {
   const { i18nRouter } = useI18n();
