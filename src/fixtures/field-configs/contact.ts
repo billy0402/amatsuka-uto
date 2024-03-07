@@ -1,4 +1,4 @@
-import { FieldConfig } from '@components/Form';
+import { FieldConfig } from '@/components/Form';
 
 export const contactFieldConfigs: FieldConfig[] = [
   {

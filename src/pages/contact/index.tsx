@@ -4,8 +4,8 @@ import type { NextPage } from 'next';
 
 import { useTranslation } from 'next-export-i18n';
 
-import Form, { FieldConfig } from '@components/Form';
-import { contactFieldConfigs } from '@fixtures/field-configs/contact';
+import Form, { FieldConfig } from '@/components/Form';
+import { contactFieldConfigs } from '@/fixtures/field-configs/contact';
 
 const ContactPage: NextPage = () => {
   const [fieldConfigs, setFieldConfigs] = useState<FieldConfig[]>([]);

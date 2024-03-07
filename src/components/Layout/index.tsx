@@ -1,6 +1,6 @@
-import Footer from '@components/Footer';
-import Navbar from '@components/Navbar';
-import { mainBackgroundMap } from '@fixtures/main-background';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+import { mainBackgroundMap } from '@/fixtures/main-background';
 import { useRouter } from 'next/router';
 
 type Props = {
