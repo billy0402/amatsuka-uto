@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://billy0402.github.io/amatsuka-uto
+
+# Sitemaps
+Sitemap: https://billy0402.github.io/amatsuka-uto/sitemap.xml
