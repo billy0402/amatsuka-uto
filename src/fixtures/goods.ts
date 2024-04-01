@@ -1,5 +1,22 @@
 export const goods = [
   {
+    image: 'uto-acrylic-figure.png',
+    title: '【天使うと】アクリルフィギュア',
+    description:
+      'ぼいそーれプロダクション所属の「天使うと」のアクリルスタンドになります。',
+    link: 'https://voice-ore.booth.pm/items/5623195',
+    start: new Date(2024, 3, 1),
+  },
+  {
+    image: 'voice-ore-ohanami-voice-2024.jpg',
+    title: 'ぼいそーれお花見ボイス2024',
+    description:
+      'V声優事務所ぼいそーれお花見ボイス\n2024年4月1日(月)12:00~2024年4月30日(火)23:59の間の期間限定販売！',
+    link: 'https://voice-ore.booth.pm/items/5622730',
+    start: new Date(2024, 3, 1),
+    end: new Date(2024, 3, 30),
+  },
+  {
     image: 'tokimeki.jpg',
     title: '『#トキメキ製作所「こはく」カンパニー！』から 番組グッズが発売📡',
     description: '#秋雪こはく さんと #天使うと さん',
