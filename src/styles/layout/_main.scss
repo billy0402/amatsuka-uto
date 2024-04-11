@@ -10,6 +10,7 @@ $background-types: ('close-eyes', 'intro', 'utopia', 'loli', 'open-eyes');
   &::after {
     position: fixed;
     z-index: $z-index_back;
+    margin-top: $height_navbar;
     background-image: url('../../../public/images/bg/bg-close-eyes.jpg');
     background-position: center;
     background-size: cover;
@@ -23,14 +24,6 @@ $background-types: ('close-eyes', 'intro', 'utopia', 'loli', 'open-eyes');
     &--bg-#{$name} {
       &::after {
         background-image: url('../../../public/images/bg/bg-#{$name}.jpg');
-      }
-    }
-  }
-
-  &--bg-intro {
-    &::after {
-      @include phone-width() {
-        top: $height_navbar;
       }
     }
   }
