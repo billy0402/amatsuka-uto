@@ -8,5 +8,9 @@
     text-shadow: 0.1em 0.1em 0.05em $color_white;
     font-size: 10rem;
     font-family: 'Mr De Haviland', cursive;
+
+    @include phone-width() {
+      font-size: 7rem;
+    }
   }
 }
