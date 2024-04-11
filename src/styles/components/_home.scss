@@ -3,8 +3,9 @@
   @extend %full-pseudo-element;
 
   &__title {
-    color: $color_text;
+    color: $color_white;
     text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em $color_white;
     font-size: 10rem;
     font-family: 'Mr De Haviland', cursive;
   }
