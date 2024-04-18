@@ -1,4 +1,18 @@
-# [amatsuka-uto](https://billy0402.github.io/amatsuka-uto/)
+# amatsuka-uto
+
+A fansite for VTuber Amatsuka Uto.
+
+<div align="center">
+
+[![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://billy0402.github.io/amatsuka-uto/)
+
+</div>
+
+**Home Page**
+![Home Page](/docs/images/home-page.jpg)
+
+**About Page**
+![About Page](/docs/images/about-page.jpg)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
