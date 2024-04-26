@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-import { LanguageSwitcher } from 'next-export-i18n';
+import { LanguageSwitcher, useLanguageQuery } from 'next-export-i18n';
 
 import { languages } from '@/fixtures/languages';
 import { routers } from '@/fixtures/routers';
@@ -11,6 +12,8 @@ import useI18n from '@/hooks/useI18n';
 import { imageRouter } from '@/lib/image';
 
 const Navbar = () => {
+  const router = useRouter();
+  const [language] = useLanguageQuery();
   const { i18nRouter } = useI18n();
 
   const [active, setActive] = useState(false);
@@ -35,13 +38,19 @@ const Navbar = () => {
         </Link>
         <ul className='navbar__items' onClick={() => setActive(false)}>
           {routers.map(({ label, href }) => (
-            <li key={href}>
+            <li
+              key={href}
+              className={href === router.pathname ? 'active' : undefined}
+            >
               <Link href={i18nRouter(href)}>{label}</Link>
             </li>
           ))}
           <hr />
           {languages.map(({ label, locale }) => (
-            <li key={locale}>
+            <li
+              key={locale}
+              className={locale === language?.lang ? 'active' : undefined}
+            >
               <LanguageSwitcher lang={locale}>{label}</LanguageSwitcher>
             </li>
           ))}
