@@ -1,5 +1,12 @@
 export const goods = [
   {
+    image: 'uto-original-logo-t-shirt.jpg',
+    title: '天使うと オリジナルロゴTシャツ',
+    description: '天使うとのオリジナルロゴを用いた個人グッズとなります。',
+    link: 'https://voice-ore.booth.pm/items/5698836',
+    start: new Date(2024, 4, 3),
+  },
+  {
     image: 'uto-acrylic-figure.png',
     title: '【天使うと】アクリルフィギュア',
     description:
