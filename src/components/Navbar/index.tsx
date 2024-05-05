@@ -55,11 +55,12 @@ const Navbar = () => {
             </li>
           ))}
           <hr />
-          {socialLinks.map(({ icon, href }) => (
+          {socialLinks.map(({ label, icon, href }) => (
             <li key={href}>
               <Link
                 target='_blank'
                 href={href}
+                aria-label={label}
                 style={{ textDecoration: 'none' }}
               >
                 <span className={`icomoon-${icon}`} />
