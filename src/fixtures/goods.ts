@@ -1,5 +1,33 @@
 export const goods = [
   {
+    image: 'uto-mug.jpg',
+    title: '天使うと マグカップ',
+    description: '天使うとのオリジナルマグカップです。',
+    link: 'https://voice-ore.booth.pm/items/5766635',
+    start: new Date(2024, 4, 29),
+  },
+  {
+    image: 'uto-fluffy-cushion.jpg',
+    title: '天使うと ふかふかクッション',
+    description: '天使うとのふかふかクッションです。',
+    link: 'https://voice-ore.booth.pm/items/5766620',
+    start: new Date(2024, 4, 29),
+  },
+  {
+    image: 'uto-original-tin-badge.jpg',
+    title: '天使うと オリジナル缶バッジ',
+    description: '天使うとのオリジナル缶バッジです。',
+    link: 'https://voice-ore.booth.pm/items/5766542',
+    start: new Date(2024, 4, 29),
+  },
+  {
+    image: 'uto-acrylic-keychain.jpg',
+    title: '天使うと アクリルキーホルダー',
+    description: '天使うとのアクリルキーホルダーです。',
+    link: 'https://voice-ore.booth.pm/items/5766526',
+    start: new Date(2024, 4, 29),
+  },
+  {
     image: 'uto-original-logo-t-shirt.jpg',
     title: '天使うと オリジナルロゴTシャツ',
     description: '天使うとのオリジナルロゴを用いた個人グッズとなります。',
