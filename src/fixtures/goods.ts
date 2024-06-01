@@ -1,5 +1,14 @@
 export const goods = [
   {
+    image: 'voice-ore-fairy-tale-voice-2024.jpg',
+    title: 'ぼいそーれ御伽噺ボイス2024',
+    description:
+      'V声優事務所ぼいそーれ御伽噺ボイス\n2024年6月1日(土)12:00~2024年6月30日(日)23:59の間の期間限定販売！',
+    link: 'https://voice-ore.booth.pm/items/5792321',
+    start: new Date(2024, 5, 1),
+    end: new Date(2024, 5, 30),
+  },
+  {
     image: 'uto-mug.jpg',
     title: '天使うと マグカップ',
     description: '天使うとのオリジナルマグカップです。',
@@ -48,8 +57,8 @@ export const goods = [
     description:
       'V声優事務所ぼいそーれお花見ボイス\n2024年4月1日(月)12:00~2024年4月30日(火)23:59の間の期間限定販売！',
     link: 'https://voice-ore.booth.pm/items/5622730',
-    start: new Date(2024, 3, 1),
-    end: new Date(2024, 3, 30),
+    start: new Date(2024, 5, 1),
+    end: new Date(2024, 5, 30),
   },
   {
     image: 'tokimeki.jpg',
