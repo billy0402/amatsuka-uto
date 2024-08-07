@@ -1,5 +1,14 @@
 export const goods = [
   {
+    image: 'uto-coffee.jpg',
+    title: '天使のcoffee',
+    description:
+      'ＶＴＵＢＥＲコラボ商品！\n今回は【天使うと】様とのコラボです！',
+    link: 'https://amamatou.stores.jp/items/66a71b3457ef72003c3209f7',
+    start: new Date(2024, 7, 7, 18, 0),
+    end: new Date(2024, 7, 26, 23, 59),
+  },
+  {
     image: 'voice-ore-fairy-tale-voice-2024.jpg',
     title: 'ぼいそーれ御伽噺ボイス2024',
     description:
