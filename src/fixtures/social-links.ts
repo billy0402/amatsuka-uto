@@ -20,4 +20,9 @@ export const socialLinks: SocialLink[] = [
     icon: 'twitch',
     href: 'https://www.twitch.tv/utonyan',
   },
+  {
+    label: 'QloveR',
+    icon: 'qlover',
+    href: 'https://qlover.jp/utopia/',
+  },
 ];
