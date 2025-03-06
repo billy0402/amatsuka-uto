@@ -9,6 +9,16 @@ export const goods = [
     end: new Date(2025, 1, 26, 23, 59),
   },
   {
+    image: 'uto-membership-card.png',
+    title: '【番組サイト開設記念】早期入会特典 限定会員証応募受付中!',
+    description:
+      'うーとぴあ早期入会特典プレゼントキャンペーン\n有料会員の方でご応募いただいた方全員に『番組オリジナル会員証』プレゼント🎁\n応募期間は9月15日（日）23:59まで！',
+    // link: 'https://qlover.jp/utopia/articles/news/arAX57YvbMXHKtRGbyC8WbED',
+    link: 'https://qlover.jp/utopia/articles/news/ar3zQb2T26xbLUG3USUkyswi',
+    start: new Date(2024, 6, 29, 0, 0),
+    end: new Date(2024, 8, 15, 23, 59),
+  },
+  {
     image: 'uto-coffee.jpg',
     title: '天使のcoffee',
     description:
