@@ -1,5 +1,14 @@
 export const goods = [
   {
+    image: 'uto-figure.jpg',
+    title: '天使うと 1/7スケールフィギュア',
+    description:
+      'フリューの高品質ホビーブランド『F:NEX』から、国内外で圧倒的な支持を受ける個人勢VTuber「天使うと」が1/7スケールフィギュアで登場♪その天使のような魅力を余すことなく詰め込んだ逸品です！',
+    link: 'https://furyu-hm.com/products/fnx-4icrdibx',
+    start: new Date(2024, 11, 24, 9, 0),
+    end: new Date(2025, 1, 26, 23, 59),
+  },
+  {
     image: 'uto-coffee.jpg',
     title: '天使のcoffee',
     description:
